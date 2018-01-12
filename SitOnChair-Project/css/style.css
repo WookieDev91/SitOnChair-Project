@@ -19,14 +19,36 @@ body {
     font-size: 10px;
 
 }
+
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+/* GRID */
+
 .container {
     width: 1050px;
     margin: auto;
 }
-.clearfix {
-    content: '';
-    clear: both;
-    display: block;
+.container-slider--first{
+    width: 950px;
+    margin: auto;
+}
+.slider-arrows--left,
+.slider-arrows--right{
+    width: 50px;
+    margin: auto;
+}
+.col-1-of-2{
+    float: left;
+    margin: auto;
+    width: 50%;
+}
+.col-1-of-3{
+    width: 32%;
+    margin: auto;
 }
 
 /*HEADER*/
@@ -80,3 +102,89 @@ header div {
     font-weight: 700;
 }
 
+/* Section : Slider */
+
+.slider {
+
+    /* FF3.6-15 */
+    background: -moz-linear-gradient(top, #ffffff 0%, #f6f6f6 47%, #d0cfd7 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: -webkit-linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#d0cfd7 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: linear-gradient(to bottom, #ffffff 0%,#f6f6f6 47%,#d0cfd7 100%);
+    /* IE6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d0cfd7',GradientType=0 );
+
+    position: relative;
+    height: 50rem;
+    width: 100%;
+
+}
+/* Section: slider navigation arrows */
+
+.slider-arrows--left a,
+.slider-arrows--right a{
+    position: relative;
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 50rem;
+    color: turquoise;
+    text-decoration:none;
+    z-index: 2;
+}
+.slider-arrows--left{
+    float: left;
+}
+.slider-arrows--right{
+    float: right;
+}
+
+.slider-arrows--right a:hover,
+.slider-arrows--left a:hover{
+    color: darkturquoise;
+    font-weight: 400;
+    transform: scale(1.1);
+    transform: translateX(-3px);
+    transform: translateX(-3px);
+}
+
+/* Section: slider--first  content */
+.container-slider--first img{
+    position: relative;
+    top: 14rem;
+    transform: scale(1.5);
+    z-index: 1;
+}
+.container-slider--first h1{
+    padding: 12rem 0 1.5rem 0;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+}
+.container-slider--first span {
+    color: turquoise;
+}
+.container-slider--first p {
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 1.8rem;
+}
+.container-slider--first a {
+    background-color: turquoise;
+    border-radius: .5rem;
+    font-size: 1.3rem;
+    display: block;
+    text-align: center;
+    line-height: 4rem;
+    margin: 2.5rem auto 0 auto;
+    width: 15rem;
+    height: 4rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+.container-slider--first a:hover{
+    font-weight: 400;
+    box-shadow: .2rem .2rem .5rem 0 #009da0;
+}
