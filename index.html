@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
 
     <meta charset="UTF-8">
@@ -20,9 +20,15 @@
 
         <nav class="mainNav">
             <ul>
-                <li><a href="">o firmie<a></li>
-                <li><a href="">galeria</a></li>
-                <li><a href="">kontakt</a></li>
+                <li><a href="#">o firmie</a>
+                    <ul class="hidden dropdown">
+                        <li><a href="#">AKTUALNOŚCI</a></li>
+                        <li><a href="#">NASZ TEAM</a></li>
+                        <li><a href="#">HISTORIA</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">galeria</a></li>
+                <li><a href="#">kontakt</a></li>
             </ul>
         </nav>
 
@@ -31,6 +37,7 @@
 </header>
 <section class="slider">
     <div class="container clearfix">
+
         <div class="slider-arrows--left"><a href="#"> < </a></div>
         <div class="container-slider--first">
             <div class="col-1-of-2">
@@ -38,13 +45,14 @@
             </div>
             <div class="col-1-of-2">
                 <h1>sit <span class="slider-heading--color">on </span>our <span class="slider-heading--color"> chair</span></h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad beatae, deserunt dolorum earum excepturi illum labore laborum nostrum quod                      recusandae!</p>
-                <a href="#" class="btn">zobacz więcej</a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad beatae, deserunt dolorum earum excepturi illum labore laborum nostrum quod recusandae!</p>
+                <a href="#" class="btn-slider">zobacz więcej</a>
             </div>
         </div>
         <div class="slider-arrows--right"><a href="#"> > </a></div>
     </div>
 </section>
+
 <section class="gallery">
     <div class="container clearfix">
         <div class="col-1-of-3" id="gallery-box1">
@@ -54,12 +62,138 @@
             <img src="images/box2_img.jpg" alt="White chair">
         </div>
         <div class="col-1-of-3" id="gallery-box3">
-           <h2>Finds all inputs</h2>
-           <span class="gallery-bar"></span>
+            <h2>Finds all inputs</h2>
+            <span class="gallery-bar"></span>
             <p>Finds all inputs that are not checked and highlights the next sibling span. Notice there is no change when clicking the checkboxes since no click events have been linked</p>
             <p>Notice there is no change when clicking the checkboxes since no click events have been linked</p>
         </div>
     </div>
 </section>
+
+<section class="priceList">
+    <div class="container clearfix">
+        <h2>cennik</h2>
+        <div class="col-1-of-3">
+
+            <div class="box-product basic">
+                <div class="box-product-decor box-product-decor2">
+                </div>
+                <h3>BASIC PLAN</h3>
+                <div class="price-style">
+                    <p>
+                        85<sup>99</sup>
+                    </p>
+                    <p>PLN/MSC</p>
+                </div>
+                <div class="box-product-items ">
+                    <div class="product-item-first">
+                        <p>Zakup towaru + dowóz</p>
+                    </div>
+                    <div class="product-item-second">
+                        <p>Serwis</p>
+                    </div>
+                </div>
+                <button class="btn">DOŁĄCZ</button>
+            </div>
+        </div>
+        <div class="col-1-of-3">
+
+            <div class="box-product standard">
+                <div class="box-product-decor box-product-decor2">
+                </div>
+                <h3>STANDARD PLAN</h3>
+                <div class="price-style">
+                    <p>
+                        95<sup>99</sup>
+                    </p>
+                    <p>PLN/MSC</p>
+                </div>
+                <div class="box-product-items ">
+                    <div class="product-item-first">
+                        <p>Zakup towaru + dowóz</p>
+                    </div>
+                    <div class="product-item-second">
+                        <p>Serwis</p>
+                    </div>
+                    <div class="product-item-third">
+                        <p>Gwarancja 5 lat</p>
+                    </div>
+                </div>
+                <button class="btn">DOŁĄCZ</button>
+            </div>
+        </div>
+
+        <div class="col-1-of-3">
+
+            <div class="box-product advenced">
+                <div class="box-product-decor box-product-decor2">
+                </div>
+                <h3>ADVANCED PLAN</h3>
+                <div class="price-style">
+                    <p>
+                        211<sup>00</sup>
+                    </p>
+                    <p>PLN/MSC</p>
+                </div>
+                <div class="box-product-items ">
+                    <div class="product-items">
+                        <div class="product-item-first">
+                            <p>Zakup towaru + dowóz</p>
+                        </div>
+                        <div class="product-item-second">
+                            <p>Serwis</p>
+                        </div>
+                        <div class="product-item-third">
+                            <p>Gwarancja 5 lat</p>
+                        </div>
+                        <div class="product-item-forth">
+                            <p>Porady projektanta</p>
+                        </div>
+                    </div>
+                    <button class="btn">DOŁĄCZ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact-section">
+    <div class="container clearfix">
+
+        <h2>kontakt</h2>
+        <div class="col-2-of-3">
+            <form action="" class="contact-form">
+                <input type="text" placeholder="Imię"/>
+                <input type="email" placeholder="E-mail"/>
+                <textarea name="message" placeholder="Wiadomość"></textarea>
+            </form>
+        </div>
+
+        <div class="col-1-of-3">
+            <div class="contact-section-chair">
+                <img src="images/red_chair.png">
+            </div>
+            <form class="section-checkbox">
+                <input id="check" type="checkbox"/>
+                </label>
+                <aside>Zgadzam sie na przetwarzanie danych osobowych</aside>
+            </form>
+            <a href="#" class="btn-checkbox">Wyślij</a>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container clearfix">
+        <div class="copy-rights">
+            <p>Copyright 2014.|All Rights Reserved. -Sit On Chair</p>
+        </div>
+        <div class="social-icons">
+            <span><a href="https://www.flickr.com"></a></span>
+            <span><a href="https://vimeo.com"></a> </span>
+            <span><a href="https://pl.pinterest.com"></a> </span>
+            <span><a href="https://www.twitter.com"></a> </span>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
